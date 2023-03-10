@@ -49,7 +49,7 @@ const About = () => {
       I'm interested in Web technologies and I love make webstite.
     </motion.p>
 
-    <div className="mt-20 flex flex-wrap gap-10">
+    <div className="mt-20 flex flex-wrap justify-center gap-10">
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}
