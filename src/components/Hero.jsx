@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
 
-      /* Mouse Scrolling Object */
+       {/* Mouse Scrolling Object  */}
 
       <div className="absolute xs:bottom-14 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
