@@ -1,6 +1,6 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload, Sphere } from "@react-three/drei";
+import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
@@ -9,7 +9,7 @@ const Stars = (props) => {
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
-  })
+  });
   
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -23,7 +23,7 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ posiion: [0, 0, 1]}}>
+      <Canvas camera={{ position: [0, 0, 1]}}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
