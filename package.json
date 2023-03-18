@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "env-cmd vite",
+    "build": "env-cmd vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
+    "env-cmd": "^10.1.0",
     "framer-motion": "^9.0.7",
     "maath": "^0.5.2",
     "react": "^18.2.0",
